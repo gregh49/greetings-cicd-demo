@@ -96,6 +96,5 @@ jobs:
       run: |
         artifactName=$(ls *.jar | head -1)
         
-        mvn deploy -DmuleDeploy -Dusername="${{ secrets.ANYPOINT_USERNAME }}" \
-        -Dpassword="${{ secrets.ANYPOINT_PASSWORD }}" -Dmessage="MuleSoft with Maven and Github rocks!"
+        mvn deploy
   
